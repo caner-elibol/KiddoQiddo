@@ -1,0 +1,6 @@
+@ParentTracker.Api_HostAddress = http://localhost:5125
+
+GET {{ParentTracker.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

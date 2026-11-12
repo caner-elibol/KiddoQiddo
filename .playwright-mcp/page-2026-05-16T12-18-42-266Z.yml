@@ -1,0 +1,93 @@
+- generic [active] [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e25] [cursor=pointer]:
+    - img [ref=e26]
+  - alert [ref=e29]
+  - generic [ref=e30]:
+    - complementary [ref=e31]:
+      - generic [ref=e32]:
+        - heading "KiddoQiddo" [level=1] [ref=e34]
+        - navigation [ref=e35]:
+          - list [ref=e36]:
+            - listitem [ref=e37]:
+              - link "📊 Dashboard" [ref=e38] [cursor=pointer]:
+                - /url: /dashboard
+                - generic [ref=e39]: 📊
+                - generic [ref=e40]: Dashboard
+            - listitem [ref=e41]:
+              - link "👨‍👩‍👧‍👦 Çocuklar" [ref=e42] [cursor=pointer]:
+                - /url: /children
+                - generic [ref=e43]: 👨‍👩‍👧‍👦
+                - generic [ref=e44]: Çocuklar
+            - listitem [ref=e45]:
+              - link "✓ Görevler" [ref=e46] [cursor=pointer]:
+                - /url: /tasks
+                - generic [ref=e47]: ✓
+                - generic [ref=e48]: Görevler
+            - listitem [ref=e49]:
+              - link "📋 Şablonlar" [ref=e50] [cursor=pointer]:
+                - /url: /task-templates
+                - generic [ref=e51]: 📋
+                - generic [ref=e52]: Şablonlar
+            - listitem [ref=e53]:
+              - link "✋ Onaylar" [ref=e54] [cursor=pointer]:
+                - /url: /approvals
+                - generic [ref=e55]: ✋
+                - generic [ref=e56]: Onaylar
+            - listitem [ref=e57]:
+              - link "🎁 Ödüller" [ref=e58] [cursor=pointer]:
+                - /url: /rewards
+                - generic [ref=e59]: 🎁
+                - generic [ref=e60]: Ödüller
+            - listitem [ref=e61]:
+              - link "📈 Raporlar" [ref=e62] [cursor=pointer]:
+                - /url: /reports
+                - generic [ref=e63]: 📈
+                - generic [ref=e64]: Raporlar
+            - listitem [ref=e65]:
+              - link "⚙️ Ayarlar" [ref=e66] [cursor=pointer]:
+                - /url: /settings
+                - generic [ref=e67]: ⚙️
+                - generic [ref=e68]: Ayarlar
+    - generic [ref=e69]:
+      - banner [ref=e70]:
+        - generic [ref=e72]:
+          - button "Bildirimler" [ref=e74]:
+            - img [ref=e75]
+            - generic [ref=e78]: "3"
+          - button "Test Ebeveyn" [ref=e80]:
+            - generic [ref=e82]: Test Ebeveyn
+      - main [ref=e83]:
+        - generic [ref=e85]:
+          - generic [ref=e87]:
+            - heading "Dashboard" [level=1] [ref=e88]
+            - paragraph [ref=e89]: Ailenizin genel durumunu görüntüleyin
+          - generic [ref=e90]:
+            - generic [ref=e92]:
+              - generic [ref=e93]:
+                - paragraph [ref=e94]: Çocuklar
+                - paragraph [ref=e95]: "1"
+              - generic [ref=e96]: 👨‍👩‍👧‍👦
+            - generic [ref=e98]:
+              - generic [ref=e99]:
+                - paragraph [ref=e100]: Bekleyen Onaylar
+                - paragraph [ref=e101]: "0"
+              - generic [ref=e102]: ✅
+            - generic [ref=e104]:
+              - generic [ref=e105]:
+                - paragraph [ref=e106]: Ödül Talepleri
+                - paragraph [ref=e107]: "0"
+              - generic [ref=e108]: 🎁
+          - generic [ref=e109]:
+            - generic [ref=e110]:
+              - paragraph [ref=e111]: Aile Kodu
+              - paragraph [ref=e112]: JWWJ3UB7
+            - paragraph [ref=e113]: Bu kodu çocuklarınızla paylaşın, giriş yaparken kullanacaklar
+          - generic [ref=e114]:
+            - heading "Çocuklar" [level=2] [ref=e115]
+            - generic [ref=e117]:
+              - generic [ref=e118]:
+                - generic [ref=e119]: A
+                - generic [ref=e120]:
+                  - paragraph [ref=e121]: Ayse
+                  - paragraph [ref=e122]: Seviye 1 · 5 puan
+              - generic [ref=e123]: 0/5 görev

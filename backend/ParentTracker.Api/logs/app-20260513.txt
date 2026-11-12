@@ -1,0 +1,112 @@
+2026-05-13 20:10:16.020 +03:00 [ERR] An error occurred using the connection to database 'littlesteps' on server 'tcp://localhost:5438'.
+2026-05-13 20:10:44.854 +03:00 [ERR] Failed executing DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-05-13 20:10:45.114 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-05-13 20:10:45.128 +03:00 [INF] Applying migration '20260513170119_InitialCreate'.
+2026-05-13 20:13:42.238 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-05-13 20:13:42.545 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-05-13 20:13:42.564 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-05-13 20:13:42.569 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-05-13 20:13:42.584 +03:00 [INF] No migrations were applied. The database is already up to date.
+2026-05-13 20:13:42.808 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "TaskTemplates" AS t)
+2026-05-13 20:13:42.960 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Int32), @p3='?', @p4='?' (DbType = Boolean), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?', @p8='?' (DbType = Guid), @p9='?', @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = Boolean), @p13='?' (DbType = Int32), @p14='?' (DbType = Int32), @p15='?', @p16='?' (DbType = Guid), @p17='?', @p18='?' (DbType = Int32), @p19='?', @p20='?' (DbType = Boolean), @p21='?' (DbType = Int32), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = Guid), @p25='?', @p26='?' (DbType = Int32), @p27='?', @p28='?' (DbType = Boolean), @p29='?' (DbType = Int32), @p30='?' (DbType = Int32), @p31='?', @p32='?' (DbType = Guid), @p33='?', @p34='?' (DbType = Int32), @p35='?', @p36='?' (DbType = Boolean), @p37='?' (DbType = Int32), @p38='?' (DbType = Int32), @p39='?', @p40='?' (DbType = Guid), @p41='?', @p42='?' (DbType = Int32), @p43='?', @p44='?' (DbType = Boolean), @p45='?' (DbType = Int32), @p46='?' (DbType = Int32), @p47='?', @p48='?' (DbType = Guid), @p49='?', @p50='?' (DbType = Int32), @p51='?', @p52='?' (DbType = Boolean), @p53='?' (DbType = Int32), @p54='?' (DbType = Int32), @p55='?', @p56='?' (DbType = Guid), @p57='?', @p58='?' (DbType = Int32), @p59='?', @p60='?' (DbType = Boolean), @p61='?' (DbType = Int32), @p62='?' (DbType = Int32), @p63='?', @p64='?' (DbType = Guid), @p65='?', @p66='?' (DbType = Int32), @p67='?', @p68='?' (DbType = Boolean), @p69='?' (DbType = Int32), @p70='?' (DbType = Int32), @p71='?', @p72='?' (DbType = Guid), @p73='?', @p74='?' (DbType = Int32), @p75='?', @p76='?' (DbType = Boolean), @p77='?' (DbType = Int32), @p78='?' (DbType = Int32), @p79='?', @p80='?' (DbType = Guid), @p81='?', @p82='?' (DbType = Int32), @p83='?', @p84='?' (DbType = Boolean), @p85='?' (DbType = Int32), @p86='?' (DbType = Int32), @p87='?', @p88='?' (DbType = Guid), @p89='?', @p90='?' (DbType = Int32), @p91='?', @p92='?' (DbType = Boolean), @p93='?' (DbType = Int32), @p94='?' (DbType = Int32), @p95='?', @p96='?' (DbType = Guid), @p97='?', @p98='?' (DbType = Int32), @p99='?', @p100='?' (DbType = Boolean), @p101='?' (DbType = Int32), @p102='?' (DbType = Int32), @p103='?', @p104='?' (DbType = Guid), @p105='?', @p106='?' (DbType = Int32), @p107='?', @p108='?' (DbType = Boolean), @p109='?' (DbType = Int32), @p110='?' (DbType = Int32), @p111='?', @p112='?' (DbType = Guid), @p113='?', @p114='?' (DbType = Int32), @p115='?', @p116='?' (DbType = Boolean), @p117='?' (DbType = Int32), @p118='?' (DbType = Int32), @p119='?', @p120='?' (DbType = Guid), @p121='?', @p122='?' (DbType = Int32), @p123='?', @p124='?' (DbType = Boolean), @p125='?' (DbType = Int32), @p126='?' (DbType = Int32), @p127='?', @p128='?' (DbType = Guid), @p129='?', @p130='?' (DbType = Int32), @p131='?', @p132='?' (DbType = Boolean), @p133='?' (DbType = Int32), @p134='?' (DbType = Int32), @p135='?', @p136='?' (DbType = Guid), @p137='?', @p138='?' (DbType = Int32), @p139='?', @p140='?' (DbType = Boolean), @p141='?' (DbType = Int32), @p142='?' (DbType = Int32), @p143='?', @p144='?' (DbType = Guid), @p145='?', @p146='?' (DbType = Int32), @p147='?', @p148='?' (DbType = Boolean), @p149='?' (DbType = Int32), @p150='?' (DbType = Int32), @p151='?', @p152='?' (DbType = Guid), @p153='?', @p154='?' (DbType = Int32), @p155='?', @p156='?' (DbType = Boolean), @p157='?' (DbType = Int32), @p158='?' (DbType = Int32), @p159='?', @p160='?' (DbType = Guid), @p161='?', @p162='?' (DbType = Int32), @p163='?', @p164='?' (DbType = Boolean), @p165='?' (DbType = Int32), @p166='?' (DbType = Int32), @p167='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23);
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p24, @p25, @p26, @p27, @p28, @p29, @p30, @p31);
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p32, @p33, @p34, @p35, @p36, @p37, @p38, @p39);
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p40, @p41, @p42, @p43, @p44, @p45, @p46, @p47);
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p48, @p49, @p50, @p51, @p52, @p53, @p54, @p55);
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p56, @p57, @p58, @p59, @p60, @p61, @p62, @p63);
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p64, @p65, @p66, @p67, @p68, @p69, @p70, @p71);
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p72, @p73, @p74, @p75, @p76, @p77, @p78, @p79);
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p80, @p81, @p82, @p83, @p84, @p85, @p86, @p87);
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p88, @p89, @p90, @p91, @p92, @p93, @p94, @p95);
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p96, @p97, @p98, @p99, @p100, @p101, @p102, @p103);
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p104, @p105, @p106, @p107, @p108, @p109, @p110, @p111);
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p112, @p113, @p114, @p115, @p116, @p117, @p118, @p119);
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p120, @p121, @p122, @p123, @p124, @p125, @p126, @p127);
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p128, @p129, @p130, @p131, @p132, @p133, @p134, @p135);
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p136, @p137, @p138, @p139, @p140, @p141, @p142, @p143);
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p144, @p145, @p146, @p147, @p148, @p149, @p150, @p151);
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p152, @p153, @p154, @p155, @p156, @p157, @p158, @p159);
+INSERT INTO "TaskTemplates" ("Id", "Category", "DefaultPoints", "Description", "IsActive", "SuggestedAgeMax", "SuggestedAgeMin", "Title")
+VALUES (@p160, @p161, @p162, @p163, @p164, @p165, @p166, @p167);
+2026-05-13 20:13:43.150 +03:00 [INF] Start installing Hangfire SQL objects...
+2026-05-13 20:13:43.680 +03:00 [INF] Hangfire SQL objects installed.
+2026-05-13 20:13:44.099 +03:00 [INF] User profile is available. Using 'C:\Users\caner\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-13 20:13:44.245 +03:00 [INF] Now listening on: http://localhost:5125
+2026-05-13 20:13:44.251 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: parent_tracker, Schema: hangfire'
+2026-05-13 20:13:44.252 +03:00 [INF] Using the following options for PostgreSQL job storage:
+2026-05-13 20:13:44.253 +03:00 [INF]     Queue poll interval: 00:00:15.
+2026-05-13 20:13:44.254 +03:00 [INF]     Invisibility timeout: 00:30:00.
+2026-05-13 20:13:44.255 +03:00 [INF]     Use sliding invisibility timeout: False.
+2026-05-13 20:13:44.256 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-05-13 20:13:44.273 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-13 20:13:44.274 +03:00 [INF] Hosting environment: Development
+2026-05-13 20:13:44.275 +03:00 [INF] Content root path: C:\Projects\LittleSteps\backend\ParentTracker.Api
+2026-05-13 20:13:44.288 +03:00 [INF] Server roket:32940:4d544804 successfully announced in 15,7791 ms
+2026-05-13 20:13:44.292 +03:00 [INF] Server roket:32940:4d544804 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-05-13 20:13:44.301 +03:00 [INF] Server roket:32940:4d544804 all the dispatchers started
+2026-05-13 20:14:00.719 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5125/ - null null
+2026-05-13 20:14:00.748 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-05-13 20:14:00.795 +03:00 [INF] HTTP GET / responded 404 in 47.4814 ms
+2026-05-13 20:14:00.806 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5125/ - 404 0 null 88.0715ms
+2026-05-13 20:14:00.812 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5125/, Response status code: 404
+2026-05-13 20:14:00.840 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5125/favicon.ico - null null
+2026-05-13 20:14:00.845 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 1.7013 ms
+2026-05-13 20:14:00.847 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5125/favicon.ico - 404 0 null 7.6206ms
+2026-05-13 20:14:00.851 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5125/favicon.ico, Response status code: 404
+2026-05-13 20:14:04.534 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5125/swagger - null null
+2026-05-13 20:14:04.541 +03:00 [INF] HTTP GET /swagger responded 404 in 2.8270 ms
+2026-05-13 20:14:04.543 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5125/swagger - 404 0 null 9.1632ms
+2026-05-13 20:14:04.546 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5125/swagger, Response status code: 404
+2026-05-13 20:14:15.941 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5125/swagger/index - null null
+2026-05-13 20:14:15.946 +03:00 [INF] HTTP GET /swagger/index responded 404 in 0.1473 ms
+2026-05-13 20:14:15.948 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5125/swagger/index - 404 0 null 6.4317ms
+2026-05-13 20:14:15.951 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5125/swagger/index, Response status code: 404
+2026-05-13 20:14:28.060 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5125/ - null null
+2026-05-13 20:14:28.063 +03:00 [INF] HTTP GET / responded 404 in 0.0955 ms
+2026-05-13 20:14:28.064 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5125/ - 404 0 null 4.0581ms
+2026-05-13 20:14:28.068 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5125/, Response status code: 404

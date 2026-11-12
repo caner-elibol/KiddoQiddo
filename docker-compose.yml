@@ -1,0 +1,46 @@
+version: "3.8"
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:14-alpine
+    container_name: parent_tracker_postgres
+    environment:
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres_dev_password}
+      POSTGRES_DB: ${DB_NAME:-parent_tracker}
+    ports:
+      - "${DB_PORT:-5438}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-postgres}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - parent_tracker_net
+
+  # Redis 7 Cache
+  redis:
+    image: redis:7-alpine
+    container_name: parent_tracker_redis
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - parent_tracker_net
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  parent_tracker_net:
+    driver: bridge

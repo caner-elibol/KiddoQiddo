@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="ParentTracker.Api/ParentTracker.Api.csproj" />
+  <Project Path="ParentTracker.Application/ParentTracker.Application.csproj" />
+  <Project Path="ParentTracker.Domain/ParentTracker.Domain.csproj" />
+  <Project Path="ParentTracker.Infrastructure/ParentTracker.Infrastructure.csproj" />
+  <Project Path="ParentTracker.Persistence/ParentTracker.Persistence.csproj" />
+</Solution>

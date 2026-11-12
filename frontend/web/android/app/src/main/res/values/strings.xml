@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">KiddoQiddo</string>
+    <string name="title_activity_main">KiddoQiddo</string>
+    <string name="package_name">com.kiddoqiddo.app</string>
+    <string name="custom_url_scheme">com.kiddoqiddo.app</string>
+</resources>
